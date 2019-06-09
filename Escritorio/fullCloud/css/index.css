@@ -1,0 +1,183 @@
+@import "normalize.css";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+.container-principal {
+	background-color: rgb(55, 118, 153);
+	padding: 10px;
+	overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+
+ul, ol{
+  padding: 0;
+  margin: 0;
+	list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+.fas{
+	margin-left: 15px;
+	color: white;
+}
+
+.logo {
+	float: left;
+	color: white;
+	margin: 5px;
+	font-size: 45px;
+}
+.header {
+	float: right;
+	margin: 5px;
+	font-size: 15px;
+}
+
+.header li {
+	display: inline-block;
+  font-size: 17px;
+	font-family: 'Anton', sans-serif;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+.header a {
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.banner{
+  background-image: url(../imagenes/banner2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+.dentro-banner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.h1-banner{
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.parrafo-banner{
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+
+/* porque nosotros */
+
+.titulo-pn{
+  width: 100%;
+}
+
+.porque-nosotros .contenedor{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+
+/* medio */
+
+.big-div{
+  background-color: rgba(5, 74, 124, 0.83);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.segundo-contenedor{
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.divisor{
+	display: flex;
+	justify-content: space-between;
+	margin: auto;
+	margin-bottom: 20px;
+	max-width: 1200px;
+}
+
+.divisor-dos{
+  display: flex;
+  flex-direction: row-reverse;
+  margin: auto;
+  margin-bottom: 20px;
+  max-width: 1200px;
+}
+
+.foto-producto{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.producto {
+	width: 32%;
+}
+
+.producto h4{
+  font-family: 'Anton', sans-serif;
+	text-align: center;
+}
+
+.parrafos{
+  text-align: center;
+}
+
+
+
+/* aca termina segundo-contenedor */
+
+.tercer-contenedor{
+  margin: auto;
+  display: flex;
+  background-color: rgba(3, 73, 112, 0.84);
+  margin-bottom: 20px;
+}
+
+
+.contenedor-iconos{
+  display: flex;
+}
+
+.iconos{
+  width: 10%;
+  margin: auto;
+}
+
+.iconos img{
+  width: 100%;
+}
+
+.parrafos-iconos{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+h1{
+  font-family: 'Open Sans', sans-serif;
+}
+
+p{
+  font-family: 'Oswald', sans-serif;
+}
