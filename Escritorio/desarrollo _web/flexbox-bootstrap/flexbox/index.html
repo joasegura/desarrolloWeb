@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Jugando con Flexbox</title>
+		<link rel="stylesheet" href="css/app.css">
+	</head>
+	<body>
+		<h2>container sin flexbox</h2>
+		<div class="container">
+			<div class="box01">01</div>
+			<div class="box02">02</div>
+			<div class="box03">03</div>
+		</div>
+
+		<h2>display: flex; (flex-wrap: nowrap;)</h2>
+		<div class="container dF">
+			<div class="box01">01</div>
+			<div class="box02">02</div>
+			<div class="box03">03</div>
+			<div class="box01">04</div>
+			<div class="box02">05</div>
+			<div class="box03">06</div>
+			<div class="box01">07</div>
+			<div class="box02">08</div>
+			<div class="box03">09</div>
+		</div>
+
+		<h2>display: flex; flex-wrap: wrap;</h2>
+		<div class="container dF fwW">
+			<div class="box01">01</div>
+			<div class="box02">02</div>
+			<div class="box03">03</div>
+			<div class="box01">04</div>
+			<div class="box02">05</div>
+			<div class="box03">06</div>
+			<div class="box01">07</div>
+			<div class="box02">08</div>
+			<div class="box03">09</div>
+		</div>
+
+		<h2>display: flex; flex-wrap: wrap-reverse;</h2>
+		<div class="container dF fwWR">
+			<div class="box01">01</div>
+			<div class="box02">02</div>
+			<div class="box03">03</div>
+			<div class="box01">04</div>
+			<div class="box02">05</div>
+			<div class="box03">06</div>
+			<div class="box01">07</div>
+			<div class="box02">08</div>
+			<div class="box03">09</div>
+		</div>
+
+		<h2>display: flex; flex-wrap: wrap; flex-direction: row-reverse;</h2>
+		<div class="container dF fwW fdRR">
+			<div class="box01">01</div>
+			<div class="box02">02</div>
+			<div class="box03">03</div>
+		</div>
+
+		<h2>display: flex; flex-wrap: wrap; flex-direction: column;</h2>
+		<div class="container dF fwW fdC">
+			<div class="box01">01</div>
+			<div class="box02">02</div>
+			<div class="box03">03</div>
+		</div>
+
+		<h2>display: flex; flex-wrap: wrap; flex-direction: column-reverse;</h2>
+		<div class="container dF fwW fdCR">
+			<div class="box01">01</div>
+			<div class="box02">02</div>
+			<div class="box03">03</div>
+		</div>
+
+		<h2>display: flex; flex-wrap: wrap; justify-content: flex-end;</h2>
+		<div class="container dF fwW jcFE">
+			<div class="box01">01</div>
+			<div class="box02">02</div>
+			<div class="box03">03</div>
+		</div>
+
+		<h2>display: flex; flex-wrap: wrap; justify-content: center;</h2>
+		<div class="container dF fwW jcC">
+			<div class="box01">01</div>
+			<div class="box02">02</div>
+			<div class="box03">03</div>
+		</div>
+
+		<h2>display: flex; flex-wrap: wrap; justify-content: space-between;</h2>
+		<div class="container dF fwW jcSB">
+			<div class="box01">01</div>
+			<div class="box02">02</div>
+			<div class="box03">03</div>
+			<div class="box01">04</div>
+		</div>
+
+		<h2>display: flex; flex-wrap: wrap; justify-content: space-around;</h2>
+		<div class="container dF fwW jcSA">
+			<div class="box01">01</div>
+			<div class="box02">02</div>
+			<div class="box03">03</div>
+			<div class="box01">04</div>
+		</div>
+
+		<h2>display: flex; flex-wrap: wrap; flex-direction: column; justify-content: space-around;</h2>
+		<div class="container dF fwW fdC jcSA" style="height: 1400px;">
+			<div class="box01">01</div>
+			<div class="box02">02</div>
+			<div class="box03">03</div>
+			<div class="box01">04</div>
+		</div>
+
+		<h2>display: flex; flex-wrap: wrap; justify-content: space-around; (align-items: strecth;)</h2>
+		<div class="container dF fwW jcSA">
+			<div class="box01 no-height" style="font-size: 12px;">
+				01
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi soluta fugiat odit, sed unde minusea rerum voluptatibus atque? Adipisci itaque soluta nostrum quae debitis!</p>
+			</div>
+			<div class="box02 no-height">02</div>
+			<div class="box03 no-height">03</div>
+			<div class="box01 no-height">04</div>
+		</div>
+
+		<h2>display: flex; flex-wrap: wrap; justify-content: space-around; align-items: flex-start;</h2>
+		<div class="container dF fwW jcSA aiFS" style="height: 400px;">
+			<div class="box01 no-height">01</div>
+			<div class="box02 no-height">02</div>
+			<div class="box03 no-height">03</div>
+			<div class="box01 no-height">04</div>
+		</div>
+
+		<h2>display: flex; flex-wrap: wrap; justify-content: space-around; align-items: flex-end;</h2>
+		<div class="container dF fwW jcSA aiFE" style="height: 400px;">
+			<div class="box01 no-height">01</div>
+			<div class="box02 no-height">02</div>
+			<div class="box03 no-height">03</div>
+			<div class="box01 no-height">04</div>
+		</div>
+
+		<h2>display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center;</h2>
+		<div class="container dF fwW jcSA aiC" style="height: 400px;">
+			<div class="box01 no-height">01</div>
+			<div class="box02 no-height">02</div>
+			<div class="box03 no-height">03</div>
+			<div class="box01 no-height">04</div>
+		</div>
+
+		<h2>display: flex; flex-wrap: wrap; flex-direction: column; justify-content: space-around; align-items: center;</h2>
+		<div class="container dF fwW fdC jcSA aiC" style="height: 400px;">
+			<div class="box01 no-height">01</div>
+			<div class="box02 no-height">02</div>
+			<div class="box03 no-height">03</div>
+			<div class="box01 no-height">04</div>
+		</div>
+
+		<h2>display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center;</h2>
+		<div class="container dF fwW jcSA aiC" style="height: 400px;">
+			<div class="box01 no-height" style="align-self: stretch;">01</div>
+			<div class="box02 no-height" style="align-self: flex-start">02</div>
+			<div class="box03 no-height" style="order: -1;">03</div>
+			<div class="box01 no-height" style="order: -2; align-self: flex-end;">04</div>
+		</div>
+
+
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	</body>
+</html>

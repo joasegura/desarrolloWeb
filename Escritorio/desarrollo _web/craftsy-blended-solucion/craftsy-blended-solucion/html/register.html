@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Craftsy Register</title>
+		<link rel="stylesheet" href="css/app.css">
+	</head>
+	<body>
+		<div class="container">
+			<!-- main-header -->
+			<header class="main-header">
+				<img src="img/logo.png" alt="logo de Craftsy" class="logo">
+
+				<nav class="main-navbar">
+					<ul>
+						<li><a href="#">Celulares</a></li>
+						<li><a href="#">Televisores</a></li>
+						<li><a href="#">Computadoras</a></li>
+					</ul>
+				</nav>
+
+				<nav class="login-navbar">
+					<ul>
+						<li><a href="register.html">Register</a></li>
+						<li><a href="login.html">Login</a></li>
+					</ul>
+				</nav>
+			</header>
+			<!-- /main-header -->
+
+			<!-- formulario -->
+			<div class="form-container">
+				<h2 class="title-form-container">Registro</h2>
+				<form method="post">
+					<div class="input-container">
+						<label>Nombre:</label>
+						<input type="text" name="nombre">
+						<span class="input-error">Obligatorio</span>
+					</div>
+
+					<div class="input-container">
+						<label>Email:</label>
+						<input type="email" name="correo">
+						<span class="input-error">Obligatorio</span>
+					</div>
+
+					<div class="input-container">
+						<label>Contraseña:</label>
+						<input type="password" name="clave">
+						<span class="input-error">Obligatorio</span>
+					</div>
+
+					<div class="input-container">
+						<label>País de nacimiento:</label>
+						<select name="pais">
+							<optgroup label="Sur América">
+								<option value="arg">Argentina</option>
+								<option value="bra">Brasil</option>
+								<option value="chi">Chile</option>
+								<option value="col">Colombia</option>
+								<option value="ven">Venezuela</option>
+							</optgroup>
+							<optgroup label="Europa">
+								<option value="esp">España</option>
+								<option value="por">Portugal</option>
+								<option value="ned">Holanda</option>
+								<option value="ale">Alemania</option>
+								<option value="ita">Italia</option>
+							</optgroup>
+						</select>
+						<span class="input-error">Obligatorio</span>
+					</div>
+
+					<div class="input-container">
+						<label class="special-label">Género:</label>
+						<label class="short-label"> <input type="radio" name="genero" value="M" class="short-input"> Masculino </label>
+						<label class="short-label"> <input type="radio" name="genero" value="F" class="short-input"> Femenino </label>
+						<label class="short-label"> <input type="radio" name="genero" value="N/A" class="short-input"> Prefiero no decirlo </label>
+					</div>
+
+					<div class="input-container">
+						<label class="special-label">Hobbies:</label>
+						<label class="short-label"> <input type="checkbox" name="hobbies" value="guitarra" class="short-input"> Guitarra </label>
+						<label class="short-label"> <input type="checkbox" name="hobbies" value="futbol" class="short-input"> Futbol </label>
+						<label class="short-label"> <input type="checkbox" name="hobbies" value="tennis" class="short-input"> Tennis </label>
+						<label class="short-label"> <input type="checkbox" name="hobbies" value="programación" class="short-input"> Programación </label>
+					</div>
+
+					<div class="input-container">
+						<label class="special-label">Dejanos tus comentarios:</label>
+						<textarea name="comentarios"></textarea>
+						<span class="input-error">Obligatorio</span>
+					</div>
+
+					<button type="submit" class="btn-form">Registrar</button>
+					<button type="reset" class="btn-form">Cancelar</button>
+				</form>
+			</div>
+			<!-- /formulario -->
+		</div>
+	</body>
+</html>

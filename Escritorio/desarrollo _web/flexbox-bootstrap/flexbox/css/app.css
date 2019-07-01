@@ -1,0 +1,100 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #f2f2f2;
+	font-family: monospace;
+}
+
+h2 {
+	background-color: #222222;
+	color: #ffffff;
+	text-align: center;
+	padding: 15px;
+	font-weight: normal;
+}
+
+.container {
+	max-width: 1200px;
+	margin: auto;
+	border: dashed 2px crimson;
+}
+
+[class*=box] {
+	width: 200px;
+	height: 200px;
+	line-height: 200px;
+	text-align: center;
+	color: #ffffff;
+	font-size: 40px;
+}
+
+.no-height {
+	height: auto;
+	line-height: 48px;
+}
+
+.box01 {
+	background-color: rgb(242, 102, 233);
+}
+
+.box02 {
+	background-color: rgb(113, 151, 233);
+}
+
+.box03 {
+	background-color: rgb(129, 228, 68);
+}
+
+.dF {
+	display: flex;
+}
+
+.fwW {
+	flex-wrap: wrap;
+}
+
+.fwWR {
+	flex-wrap: wrap-reverse;
+}
+
+.fdRR {
+	flex-direction: row-reverse;
+}
+
+.fdC {
+	flex-direction: column;
+}
+
+.fdCR {
+	flex-direction: column-reverse;
+}
+
+.jcFE {
+	justify-content: flex-end;
+}
+
+.jcC {
+	justify-content: center;
+}
+
+.jcSB {
+	justify-content: space-between;
+}
+
+.jcSA {
+	justify-content: space-around;
+}
+
+.aiFS {
+	align-items: flex-start;
+}
+
+.aiFE {
+	align-items: flex-end;
+}
+
+.aiC {
+	align-items: center;
+}

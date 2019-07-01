@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Ejemplos con Bootstrap</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<style>
+			.container {
+				border: dashed 3px crimson;
+			}
+			[class*=col-] {
+				background-color: #d2d1d1;
+				border: solid 1px #afa9a9;
+			}
+		</style>
+	</head>
+	<body>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-6 col-md-3 col-lg-4">
+					<h3>Un titular</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates magnam similique voluptatem esse eos cupiditate adipisci, quia temporibus recusandae deleniti, eaque distinctio deserunt ipsam aperiam repudiandae. Veniam aperiam velit nemo.</p>
+				</div>
+				<div class="col-12 col-sm-6 col-md-3 col-lg-4">
+					<h3>Un titular</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam eum ut, molestias, totam ratione sunt excepturi ducimus cumque non maiores perferendis fugit at! Neque corrupti distinctio reiciendis expedita ducimus aperiam.</p>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4">
+					<h3>Un titular</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates magnam similique voluptatem esse eos cupiditate adipisci, quia temporibus recusandae deleniti, eaque distinctio deserunt ipsam aperiam repudiandae. Veniam aperiam velit nemo.</p>
+				</div>
+				<div class="col-6">
+					<div class="row">
+						<div class="col-12 col-sm-6">col</div>
+						<div class="col-12 col-sm-6">col</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<h1>Hello world!</h1>
+		<button type="button" class="btn btn-danger">Soy un botón</button>
+		<button type="button" class="btn btn-info">Soy un botón</button>
+		<button type="button" class="btn btn-success">Soy un botón</button>
+		<button type="button" class="btn btn-warning">Soy un botón</button>
+		<hr>
+		<button type="button" class="btn btn-lg btn-danger">Soy un botón</button>
+		<button type="button" class="btn btn-lg btn-info">Soy un botón</button>
+		<button type="button" class="btn btn-lg btn-success">Soy un botón</button>
+		<button type="button" class="btn btn-lg btn-warning">Soy un botón</button>
+		<hr>
+
+		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+		  <div class="carousel-inner">
+		    <div class="carousel-item active">
+		      <img src="images/img-banner-01.jpg" class="d-block w-100" alt="">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="images/img-banner-02.jpg" class="d-block w-100" alt="">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="images/img-banner-03.jpg" class="d-block w-100" alt="">
+		    </div>
+		  </div>
+
+			<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Previous</span>
+		  </a>
+
+		  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Next</span>
+		  </a>
+		</div>
+
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

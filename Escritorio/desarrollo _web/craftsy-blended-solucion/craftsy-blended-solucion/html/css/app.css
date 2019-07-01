@@ -1,0 +1,229 @@
+/* traemos la tipografía Lato desde los servidores de google fonts */
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+/* Selector Universal - Selecciona a todos los elementos de HTML */
+* {
+	box-sizing: border-box; /* sirve para que el padding y border se descuenten del width y heigth de manera automática */
+}
+
+/* Reset para las listas OL y UL */
+ul, ol {
+	list-style: none; /* elimina la viñeta */
+	margin: 0; /* elimina el márgen */
+	padding: 0; /* elimina el relleno */
+}
+
+body {
+	background-image: url("../img/bg-2.png");
+	font-family: 'Lato', sans-serif;
+}
+
+.container {
+	width: 1140px;
+	margin: 0 auto; /* centra horizontalmente un elemento de bloque que no flote */
+	overflow: hidden;
+}
+
+.main-header {
+	background-color: rgb(231, 73, 45);
+	padding: 15px;
+	margin-bottom: 30px;
+	overflow: hidden; /* para contener a los elementos flotados que hay adentro de este contenedor */
+}
+
+
+/* Agrupación selectores */
+.logo, .main-navbar {
+	float: left;
+}
+
+.main-navbar li, .login-navbar li {
+	display: inline-block;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+.main-navbar a, .login-navbar a {
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.login-navbar {
+	float: right;
+}
+
+.products-container {
+	width: 800px;
+	float: left;
+	background-color: #ffffff;
+	/* como este elemento contenedor está flotado NO es necesario aplicar el overflow: hidden; */
+}
+
+.one-product {
+	width: 380px;
+	margin: 10px 10px 20px;
+	float: left;
+}
+
+.one-product img {
+	width: 100%;
+	/* la imagen se ajustará al 100% de ancho de su elemento contenedor */
+}
+
+.one-product a {
+	color: #ffffff;
+	text-decoration: none;
+	background-color: rgb(231, 73, 45);
+	padding: 10px 20px;
+	display: inline-block;
+}
+
+.news-container {
+	width: 320px;
+	float: right;
+}
+
+.news-title {
+	background-color: #ffffff;
+	border: solid 1px rgb(45, 126, 221);
+	padding: 15px;
+	margin-top: 0;
+}
+
+.tutorials-list {
+	margin-bottom: 30px;
+}
+
+.tutorials-list li {
+	background-color: #ffffff;
+	padding: 15px;
+	border: solid 1px rgb(45, 126, 221);
+	overflow: hidden;
+}
+
+.tutorials-list img {
+	float: left;
+	margin-right: 15px;
+}
+
+.tutorials-list a {
+	color: #000000;
+	text-decoration: none;
+}
+
+.banners {
+	background-color: #ffffff;
+	padding: 15px;
+	border: solid 1px rgb(45, 126, 221);
+}
+
+.banners img {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+
+
+/* Formularios */
+
+.form-container {
+	width: 380px;
+	margin: auto;
+}
+
+.title-form-container {
+	text-align: center;
+}
+
+.input-container {
+	margin-bottom: 20px;
+}
+
+.input-container label {
+	display: block;
+}
+
+.input-container input,
+.input-container select,
+.input-container textarea {
+	display: block;
+	width: 100%;
+	margin-top: 5px;
+	height: 30px;
+	border: solid 1px rgb(146, 148, 149);
+	border-radius: 5px;
+	padding: 0 15px;
+	font-size: 16px;
+	font-family: inherit; /* logro que el input tome la misma tipografía que estoy usando para el body */
+}
+
+.input-container textarea {
+	height: 150px;
+	padding: 15px;
+}
+
+.input-error {
+	color: red;
+	display: inline-block; /* el span es un elemento inline y lo convierto en un inline-block para aplicar el márgin superior */
+	margin-top: 5px;
+}
+
+.special-label {
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.input-container .short-input {
+	/* piso los estilos que no quiero que se heredan del selector ".input-container input" */
+	display: inline-block;
+	padding: 0;
+	height: auto;
+	width: auto; /* cuando el width está en auto, el ancho del elemento es el definido por el browser */
+}
+
+.input-container .short-label {
+	display: inline-block;
+}
+
+.btn-form {
+	background-color: rgb(48, 105, 233);
+	color: #FFFFFF;
+	padding: 10px 20px;
+	border-radius: 8px;
+	font-size: 17px;
+	text-transform: uppercase;
+	border: none;
+}
+
+/* Aplicamos estilo al evento ROLL-OVER (pasar con el cursor por encima) */
+.btn-form:hover {
+	background-color: rgb(164, 32, 135);
+}
+
+/* Login */
+.contenedor-principal {
+	background-color: rgb(231, 73, 45);
+	padding: 15px;
+	margin-bottom: 30px;
+	overflow: hidden; /* para contener a los elementos flotados que hay adentro de este contenedor */
+}
+
+.contenedor-login {
+	width: 380px;
+	margin: auto;
+}
+
+button {
+	background-color: rgb(48, 105, 233);
+	color: #FFFFFF;
+	padding: 10px 20px;
+	border-radius: 8px;
+	font-size: 17px;
+	text-transform: uppercase;
+	border: none;
+}
+
+button:hover {
+	background-color: rgb(231, 73, 45);
+}

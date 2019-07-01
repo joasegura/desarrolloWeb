@@ -1,0 +1,57 @@
+<html lang="es" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Login</title>
+		<link rel="stylesheet" href="css/app.css">
+	</head>
+	<body>
+
+		<div class="contenedor-principal">
+			<!-- Cabecera -->
+			<header class="cabecera-principal">
+				<article class="logo">
+					<img src="img/logo.png" alt="logo Craftsy">
+				</article>
+
+				<ul class="main-navbar">
+					<li><a href="#">Smartphones</a></li>
+					<li><a href="#">Tablets</a></li>
+					<li><a href="#">Computadoras</a></li>
+				</ul>
+
+				<ul class="login-navbar">
+					<li><a href="#">Registro</a></li>
+					<li><a href="#">Login</a></li>
+				</ul>
+			</header>
+
+		</div>
+
+  <div class="contenedor-login">
+    <section>
+      <h1>BIENVENIDO</h1>
+      <br>
+      <form class="registro" action="index.html" method="post">
+        <p>
+          <label for="email">Email</label>
+          <br>
+          <input id=email type="email" name="email" value="" placeholder="Email">
+        </p>
+
+        <p>
+          <label for="pass">Contraseña</label>
+          <br>
+          <input id=pass type="password" name="pass" value="" placeholder="Contraseña">
+        </p>
+        <label id="recordarme">
+        <input type="checkbox" name="recordarme" value="rec"> Recordarme
+        </label>
+					<span class="input-error">La combinación de email y contraseña no es valida</span>
+					<br><br>					
+        <button type="submit" name="button">Ingresar</button>
+      </form>
+    </section>
+
+    </div>
+  </body>
+</html>

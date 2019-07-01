@@ -1,0 +1,95 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: rgb(176, 240, 242);
+	margin: 0;
+	/* Recordar: hablar acerca de los RESET en CSS */
+}
+
+.container {
+	margin: auto;
+	/* Al NO haber un width declarado, el ancho será igual al 100% del contenedor padre */
+	max-width: 1200px;
+	border: dashed 1px red;
+	overflow: hidden;
+}
+
+.col-izq {
+	background-color: yellow;
+	/* width: 345px; */
+	width: 28.75%; /* 345px en %, cuando el contenedor tenga un máximo de 1200 */
+	min-height: 300px;
+	float: left;
+}
+
+.sub-col {
+	background-color: black;
+	height: 50px;
+	width: 36.23%; /* (125 / 345) * 100 */
+}
+
+.main-header {
+	width: 100vw;
+	min-height: 100vh;
+	background-color: pink;
+}
+
+p {
+	font-size: 2em; /* tiene dos veces lo que su contenedor tiene en font-size */
+}
+
+.col-der {
+	width: 35.41%; /* ( 425 / 1200 ) x 100 */
+	min-height: 300px;
+	background-color: rgb(252, 40, 174);
+	float: right;
+}
+
+/* DEBO USAR SOLAMENTE UN TIPO DE media-query */
+
+/* mobile first */
+/* min-width -> desde 430px hacía arriba */
+@media (min-width: 430px) {
+	/* MIS REGLAS DE ESTILO */
+}
+
+/* mobile last */
+/* max-width -> desde 760px hacía abajo */
+@media (max-width: 760px) {
+	/* MIS REGLAS DE ESTILO */
+	.col-izq {
+		width: 60%;
+		padding: 15px;
+	}
+
+	.col-der {
+		width: 40%;
+		padding: 15px;
+	}
+}
+
+@media (max-width: 370px) {
+	.col-izq,
+	.col-der {
+		width: 100%;
+		float: none;
+	}
+}
+
+
+/*
+Las medidas que implementamos en las media-queries NO tienen nada que ver con la resolución de pantalla de los dispositivos.
+
+Éstas medidas se basan en algo que llamamos break-points.
+
+Un break-point es un punto de quiebre en el cual nos damos cuenta que la web se ve mal.
+
+Break point recomendados para Mobile First
+
+- 480
+- 768
+- 992
+- 1200
+*/

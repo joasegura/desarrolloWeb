@@ -1,0 +1,107 @@
+/* Importamos la CSS de Font Awesome */
+@import url('https://use.fontawesome.com/releases/v5.8.1/css/all.css');
+/* Importamos la CSS de la tipografía Roboto de Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+/* Importamos la CSS normalize que tenemos en nuestra carpeta */
+@import "normalize.css";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-image: url('../images/bg-body.png');
+}
+
+ul, ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+	color: inherit;
+}
+
+.banner {
+	display: none;
+}
+
+.container {
+	padding: 0 15px;
+}
+
+.logo {
+	border-radius: 100%;
+	border: solid 1px #cacaca;
+	margin: 15px auto 30px;
+	display: block;
+}
+
+.main-nav a {
+	background-color: #222222;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	text-align: center;
+	color: #ffffff;
+	width: 100%;
+	padding: 1em 0;
+	border-bottom: solid 1px #ffffff;
+}
+
+.toggle-nav {
+	background-color: #222222;
+	display: block;
+	margin: auto;
+	width: 40px;
+	color: #ffffff;
+	text-align: center;
+	margin-bottom: 15px;
+	padding: 10px;
+	border-radius: 6px;
+}
+
+.vip-products {
+	margin-top: 30px;
+}
+
+.product {
+	margin-bottom: 20px;
+}
+
+.photo-container {
+	position: relative;
+}
+
+.photo {
+	width: 100%;
+}
+
+.special {
+	position: absolute;
+	top: 0;
+	right: 15px;
+}
+
+.zoom {
+	background-color: rgba(0, 0, 0, 0.75);
+	color: #ffffff;
+	text-align: center;
+	width: 100%;
+	padding: 10px 0;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	/* para llevar al 50% exacto de su elemento contenedor */
+	transform: translateY(-50%);
+}
+
+.more {
+	background-color: #000000;
+	color: #ffffff;
+	font-size: 1.2em;
+	padding: 0.5em 1.2em;
+}

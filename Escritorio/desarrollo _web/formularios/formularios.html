@@ -1,0 +1,75 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Formaularios</title>
+  </head>
+  <body>
+    <form class="" action="index.html" method="post">
+      <p>
+        <label for="nombre">
+          Nombre:
+        </label>
+        <input id= nombre type="text" name="nombre" value="" placeholder="Ingrese su nombre aqui..." required>
+      </p>
+      <p>
+        <label for="email">
+          Email:
+        </label>
+        <input id=email type="email" name="email" value="">
+      </p>
+      <p>
+        <label for="pass">
+          Contraseña:
+        </label>
+        <input id=pass type="password" name="pass" value="">
+      </p>
+      <p>
+        <label for="cine">¿Ya asistió al cine este año?</label>
+        <br>
+        <input type="radio" name="cine" value="s"> Si
+        <br>
+        <input type="radio" name="cine" value="n" checked> No
+      </p>
+      <p>
+        <label for="genero">Seleccione sus generos preferidos</label>
+        <br>
+        <input type="checkbox" name="genero" value="d" checked> Drama
+        <br>
+        <input type="checkbox" name="genero" value="c"> Comedia
+        <br>
+        <input type="checkbox" name="genero" value="a"> Aventura
+        <br>
+        <input type="checkbox" name="genero" value="t"> Terror
+      </p>
+      <p>
+        <label for="pais">Pais:</label>
+        <select class="" name="pais" id="pais">
+          <option value="ar">
+            Argentina
+          </option>
+          <option value="br">
+            Brasil
+          </option>
+          <option value="co">
+            Colombia
+          </option>
+        </select>
+      </p>
+      <p>
+        <label for="com">Comentarios</label>
+        <textarea id="com" rows="8" cols="80">
+
+        </textarea>
+      </p>
+      <p>
+        <button type="submit" name="button">
+          Enviar
+        </button>
+        <button type="reset" name="button">
+          Reiniciar
+        </button>
+      </p>
+    </form>
+
+  </body>
+</html>

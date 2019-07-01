@@ -1,0 +1,13 @@
+/* Selector Universal */
+* {
+	box-sizing: border-box;
+}
+
+.contenedor {
+	width: 960px;
+	/* height: 450px; */
+	border: solid 10px red;
+	padding: 15px;
+	margin: 300px auto;
+	background-color: rgb(165, 222, 182);
+}

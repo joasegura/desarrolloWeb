@@ -1,0 +1,42 @@
+* {
+	box-sizing: border-box;
+}
+
+.contenedor {
+	width: 960px;
+	margin: 50px auto;
+	background-color: rgb(226, 227, 171);
+	border: solid 10px #000;
+	padding: 20px;
+	/* permite que el contenedor contengan a las cajas que flotan dentro de él */
+	overflow: hidden;
+}
+
+.caja01 {
+	width: 100px;
+	height: 100px;
+	background-color: rgb(240, 185, 135);
+	float: left;
+}
+
+.caja02 {
+	width: 100px;
+	height: 100px;
+	background-color: rgb(202, 131, 235);
+	float: left;
+}
+
+.caja03 {
+	width: 100px;
+	height: 100px;
+	background-color: rgb(110, 137, 236);
+	float: right;
+}
+
+.caja04 {
+	background-color: yellow;
+	height: 50px;
+	border: solid 5px green;
+	/* corta la flotación de los elementos que estén encima de este elemento */
+	clear: both;
+}
