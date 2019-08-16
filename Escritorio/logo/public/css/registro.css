@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Maiden+Orange');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import "normalize.css";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: url(../subtle_stripes.png);
+}
+
+.contenedor-principal {
+	background-color: rgb(2, 9, 20);
+	padding: 15px;
+	margin-bottom: 30px;
+	overflow: hidden; /* para contener a los elementos flotados que hay adentro de este contenedor */
+}
+
+.logo{
+	float: left;
+	font-family: 'Pacifico', cursive;
+	color: white;
+	margin: 5px;
+	font-size: 45px;
+}
+
+.logo a{
+	color: white;
+	text-decoration: none;
+}
+
+.registro-navbar {
+	float: right;
+	margin: 5px;
+	font-size: 20px;
+}
+
+.registro-navbar li {
+	display: inline-block;
+	font-family: 'Anton', sans-serif;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+.registro-navbar a {
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.contenedor-registro{
+  margin: auto;
+  width: 380px;
+  margin-top: 105px;
+  padding-bottom: 25px;
+}
+
+.contenedor-registro section h1{
+	font-family: 'Pacifico', cursive;
+	text-align: center;
+	font-size: 50px;
+}
+
+.contenedor-input{
+  margin-bottom: 20px;
+}
+
+.contenedor-input input {
+  display: block;
+  width: 100%;
+  margin: auto;
+  height: 45px;
+  border: solid 1px rgb(146, 148, 149);
+  border-radius: 5px;
+  padding: 0 15px;
+  font-size: 22px;
+  font-family: 'Maiden Orange', cursive;
+}
+
+button {
+	display: block;
+	width: 75%;
+	background-color: rgb(2, 9, 20);
+  color: #FFFFFF;
+	font-family: 'Anton', sans-serif;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 17px;
+  text-transform: uppercase;
+  border: none;
+  margin: 20px auto;
+}
+
+button:hover {
+	background-color: rgb(1, 41, 80);
+}
+
+.pais{
+  font-size: 22px;
+  font-family: 'Maiden Orange', cursive;
+}
+
+.special-label{
+  font-size: 22px;
+  font-family: 'Maiden Orange', cursive;
+}
+
+.input-container input,
+.input-container select,
+.input-container textarea {
+	display: block;
+	width: 100%;
+	margin-top: 5px;
+	height: 30px;
+	border: solid 1px rgb(146, 148, 149);
+	border-radius: 5px;
+	padding: 0 15px;
+	font-size: 16px;
+	font-family: inherit; /* logro que el input tome la misma tipografía que estoy usando para el body */
+}
+
+.input-container textarea{
+  height: 100px
+}
+
+.input-container .short-label {
+	display: inline-block;
+  font-size: 18px;
+  margin-left: 30px;
+}
+
+
+.input-container .short-input {
+	display: inline-block;
+	padding: 0;
+	height: auto;
+	width: auto;
+}
+
+/* responsive */
+
+@media (max-width:768px) {
+
+	.contenedor-registro{
+		width: 100%
+	}
+
+	.container-registro{
+		min-width: 370px;
+	}
+
+	.contenedor-principal{
+		min-width: 370px;
+	}
+}
+	@media (max-width: 550px) {
+
+		.contenedor-registro{
+			width: 100%;
+		}
+
+		.container-registro{
+			min-width: 70px;
+		}
+
+		.contenedor-principal{
+			min-width: 70px;
+		}
+}
+		/* errores en rojo */
+.errores {
+	color: red;
+}

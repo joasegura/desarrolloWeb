@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Maiden+Orange');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import "normalize.css";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: url(../subtle_stripes.png);
+}
+
+.contenedor-principal {
+	background-color: rgb(2, 9, 20);
+	padding: 15px;
+	margin-bottom: 30px;
+	overflow: hidden; /* para contener a los elementos flotados que hay adentro de este contenedor */
+}
+
+.logo{
+	float: left;
+	font-family: 'Pacifico', cursive;
+	color: white;
+	margin: 5px;
+	font-size: 45px;
+}
+
+.logo a{
+	color: white;
+	text-decoration: none;
+}
+
+.login-navbar {
+	float: right;
+	margin: 5px;
+	font-size: 20px;
+}
+
+.login-navbar li {
+	display: inline-block;
+	font-family: 'Anton', sans-serif;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+.login-navbar a {
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.contenedor-login{
+  margin: auto;
+  width: 380px;
+  margin-top: 105px;
+  padding-bottom: 25px;
+  /*border: solid 1px red; /* temporal */
+}
+
+.contenedor-input{
+  margin-bottom: 20px;
+}
+
+.contenedor-input input {
+  display: block;
+  width: 75%;
+  margin: auto;
+  height: 45px;
+  border: solid 1px rgb(146, 148, 149);
+  border-radius: 5px;
+  padding: 0 15px;
+  font-size: 22px;
+  font-family: 'Maiden Orange', cursive;
+}
+
+button {
+	display: block;
+	width: 75%;
+	background-color: rgb(2, 9, 20);
+  color: #FFFFFF;
+	font-family: 'Anton', sans-serif;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 17px;
+  text-transform: uppercase;
+  border: none;
+	margin:auto;
+}
+
+button:hover {
+	background-color: rgb(1, 41, 80);
+}
+
+#recordarme {
+	font-family: 'Anton', sans-serif;
+	font-size: 15px;
+	margin-left: 64%;
+	top: 50%;
+}
+
+.contenedor-login section h1{
+	font-family: 'Pacifico', cursive;
+	text-align: center;
+	font-size: 50px;
+}
+
+.pass-olvidada {
+	color: black;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'Anton', sans-serif;
+	font-size: 12px;
+	margin-left: 13%;
+	top: 50%;
+}
+
+/* responsive */
+
+@media (max-width:768px) {
+	.contenedor-login{
+		width: 100%
+	}
+
+	.contenedor-principal{
+		min-width: 370px;
+	}
+
+	.container-login{
+		min-width: 370px;
+	}
+
+	.registro{
+		width: 100%;
+	}
+}
